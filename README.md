@@ -6,7 +6,7 @@
 
 **Асинхронное тестирование, Zombie + Puppeteer**
 
-> strings
+> 01. [API Mocha Test](https://github.com/PavelBazhan/ifmo-results-3/tree/master/2018_09_07/01)
 > strings
 
 ## NODE-001
