@@ -2,64 +2,86 @@
 
 Задания за 1 семестр 2018-2019 учебного года news
 
-## Семестровые 
+## PZAT-001 / TEST-001
 
-**1. SCORM-пакет** 
+**Асинхронное тестирование, Zombie + Puppeteer**
 
-> http://212.92.98.204:81/ - развернутый Moodle-проект с созданным 
-> тестом и тестовыми аккаунтами.
-> 
-> Аккаунт админа: admin Qwerty09*  
-> Аккаунт студента: user01 user01pasS*
-> 
-> Исходники SCORM-пакета можно найти в файле scorm.zip
+> strings
+> strings
 
-**2. Корзина пользователя с drag'n'drop элементами**
+## NODE-001
 
-> http://212.92.98.204:82/ - корзина пользователя. Создана при помощи 
-KnockoutJS + нативные JS события
-> 
-> Для добавления элемента в корзину перетащите его. Для удаления 
-элемента из корзины щелкните по нему
-> 
-> Исходники корзины располагаются в директории dnd  
-> app.js - описание ViewModel  
-> dnd.js - описание самого события drag'n'drop  
+**Создание простого сервера на простом модуле http**
 
-## Лабораторные 
+> strings
+> strings
 
-**1. Проект с оператором bind**
+## NODE-002
 
-> https://github.com/BazhanPavel/ifmo-results-2/tree/master/0203
+**Считывание информации из API**
 
-**2. Последовательное выполнение асинхронных заданий в цикле 
-(30.03.2018)**
+> strings
+> strings
 
-> https://github.com/BazhanPavel/ifmo-results-2/tree/master/3003
+## NODE-003
 
-**3. Проект на JSX «Liker» (27.04.2018)**
+**Считывание информации из RSS**
 
-> https://github.com/BazhanPavel/ifmo-results-2/tree/master/2704     
-> https://bazhanpavel.github.io/
+> strings
+> strings
 
-**4. Проект с нативными компонентами от 13.04.2018**
+## NODE-004
 
-> https://github.com/BazhanPavel/ifmo-results-2/tree/master/1304
+**Анализ стрима**
 
-**5. Плагин для Wordpress (23.03.2018)**
+> strings
+> strings
 
-> https://github.com/BazhanPavel/ifmo-results-2/tree/master/2303/TextSizeChanging
+## GZIP-0001
 
-**6. Скрипт, извлекающий из WordPress заголовки постов с помощью Word**
-PressREST API
+**Созданиие зипующего стрима**
 
-> https://github.com/BazhanPavel/ifmo-results-2/tree/master/2303/02
+> strings
+> strings
 
-**7. Квайн на JS в одну строку с использованием метода toString функции**
+## CODE-001
 
-> https://github.com/BazhanPavel/ifmo-results-2/tree/master/1602/01
+**Хакатон с отправкой зашифрованного сообщения**
 
-**8. Сценарий на RxJS, превращающий щелчки по кнопке в наблюдаемый поток.**
+> strings
+> strings
 
-> https://github.com/BazhanPavel/ifmo-results-2/tree/master/2004
+## AUTH-001
 
+**Задание с исследованием аутентификации, в том числе Passport.JSя**
+
+> strings
+> strings
+
+## SOCK-001
+
+**Чат на socket.io и на ReactPHP (по материалам доклада 30.11.2018)**
+
+> strings
+> strings
+
+## DOCK-001
+
+**Обёртывание приложения в контейнеры: исследование**
+
+> как автоматизировать создание REST
+> как автоматизировать генерацию сертфикатов
+
+## NODE-005
+
+**Развёртывание CMS на Node и их сравнительный анализ при сопоставлении с CMS на PHP. Пример: Ghost vs WordPress)**
+
+> strings
+> strings
+
+## TERM-001
+
+**ИТОГОВОЕ задание / задание по практике** 
+
+> strings
+> strings
