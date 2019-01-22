@@ -14,8 +14,7 @@
 
 **Создание простого сервера на простом модуле http**
 
-> strings
-> strings
+> [Node Server Add API + Mocha Test](https://github.com/PavelBazhan/ifmo-results-3/tree/master/2018_09_14/simpleNodeServer)
 
 ## NODE-002
 
