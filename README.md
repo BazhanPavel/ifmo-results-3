@@ -8,6 +8,7 @@
 
 > 01. [API Mocha Test](https://github.com/PavelBazhan/ifmo-results-3/tree/master/2018_09_07/01)
 > 02. [There&Back](https://github.com/PavelBazhan/ifmo-results-3/tree/master/2018_09_07/02)
+> 03. [Puppeteer Test](https://github.com/PavelBazhan/ifmo-results-3/tree/master/2018_09_07/03)
 
 ## NODE-001
 
