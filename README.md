@@ -26,8 +26,7 @@
 
 **Считывание информации из RSS**
 
-> strings
-> strings
+> [RSS nodejs Blog](https://github.com/PavelBazhan/ifmo-results-3/tree/master/rss_task)
 
 ## NODE-004
 
