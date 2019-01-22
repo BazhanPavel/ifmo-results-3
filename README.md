@@ -38,8 +38,7 @@
 
 **Созданиие зипующего стрима**
 
-> strings
-> strings
+> [ZIP Stream](https://github.com/PavelBazhan/ifmo-results-3/tree/master/zip)
 
 ## CODE-001
 
