@@ -7,7 +7,7 @@
 **Асинхронное тестирование, Zombie + Puppeteer**
 
 > 01. [API Mocha Test](https://github.com/PavelBazhan/ifmo-results-3/tree/master/2018_09_07/01)
-> strings
+> 02. [There&Back](https://github.com/PavelBazhan/ifmo-results-3/tree/master/2018_09_07/02)
 
 ## NODE-001
 
@@ -81,7 +81,7 @@
 
 ## TERM-001
 
-**ИТОГОВОЕ задание / задание по практике** 
+**ИТОГОВОЕ задание / задание по практике**
 
 > strings
 > strings
