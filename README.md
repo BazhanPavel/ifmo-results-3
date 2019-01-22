@@ -20,8 +20,7 @@
 
 **Считывание информации из API**
 
-> strings
-> strings
+> [Weather API](https://github.com/PavelBazhan/ifmo-results-3/tree/master/weather_task)
 
 ## NODE-003
 
