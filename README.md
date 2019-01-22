@@ -32,8 +32,7 @@
 
 **Анализ стрима**
 
-> strings
-> strings
+> [Stream Analysis](https://github.com/PavelBazhan/ifmo-results-3/tree/master/stream)
 
 ## GZIP-0001
 
