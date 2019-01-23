@@ -38,14 +38,13 @@
 
 **Созданиие зипующего стрима**
 
-> [ZIP Stream](https://github.com/PavelBazhan/ifmo-results-3/tree/master/zip)
+> [ZIP Stream](https://github.com/PavelBazhan/ifmo-results-3/tree/master/gzip)
 
 ## CODE-001
 
 **Хакатон с отправкой зашифрованного сообщения**
 
-> strings
-> strings
+> [CODE](https://github.com/PavelBazhan/ifmo-results-3/tree/master/code-001)
 
 ## AUTH-001
 
