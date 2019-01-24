@@ -48,16 +48,15 @@
 
 ## AUTH-001
 
-**Задание с исследованием аутентификации, в том числе Passport.JSя**
+**Задание с исследованием аутентификации**
 
 > [Authentication](https://github.com/PavelBazhan/ifmo-results-3/tree/master/auth-001)
 
 ## SOCK-001
 
-**Чат на socket.io и на ReactPHP (по материалам доклада 30.11.2018)**
+**Презентация на socket.io**
 
-> strings
-> strings
+> [Socket.io Presentation + Chat](https://github.com/PavelBazhan/ifmo-results-3/tree/master/sock-001)
 
 ## DOCK-001
 
