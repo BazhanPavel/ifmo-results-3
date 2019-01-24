@@ -50,8 +50,7 @@
 
 **Задание с исследованием аутентификации, в том числе Passport.JSя**
 
-> strings
-> strings
+> [Auth](https://github.com/PavelBazhan/ifmo-results-3/tree/master/auth-001)
 
 ## SOCK-001
 
