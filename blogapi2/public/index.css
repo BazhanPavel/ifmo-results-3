@@ -72,12 +72,26 @@ ul.posts li p:first-of-type:before {
   content: "Categories: "
 }
 
-ul.posts a.api_link {
+ul.posts a.api_link,
+ul.posts a.del_link {
   position: absolute;
   display: block;
   top: 5px;
   right: 5px;
   color: #999;
+}
+
+ul.posts a.api_link:hover {
+  color: #696969;
+}
+
+ul.posts a.del_link {
+  right: 70px;
+  color: #FA8072;
+}
+
+ul.posts a.del_link:hover {
+  color: #CA5042;
 }
 
 form.post_description {
