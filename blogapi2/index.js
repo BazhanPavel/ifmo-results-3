@@ -45,7 +45,12 @@ app
       // оборачиваем в Post.find для установки правильного id
       Post.find({}, (err, docs) => {
         // новый id равен id последнего ++
-        let newid = ++docs[docs.length-1].id;
+	let newid;
+	if (!docs[0]) {
+	  newid = 1
+	} else {
+          newid = ++docs[docs.length-1].id || 1;
+	}
 
         let post = new Post({
           id: newid,
