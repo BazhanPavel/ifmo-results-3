@@ -1,17 +1,32 @@
 const express = require('express');
 const app = express();
+const fetch = require('node-fetch');
+let posts = [
+  { id: 1,
+  title: 'Hi!',
+  categories: 'Computer, Friends',
+  content: 'Post about Friends'
+  },
+  {
+  id: 2,
+  title: 'New Post',
+  categories: 'Candy',
+  content: 'Post about Candy'
+  }
+]
 
 app.listen(1234);
 app
+    .set('view engine', 'pug')
+    .set('views', __dirname + '/views')
     .get('/', (req, res) => {
-      res.sendFile(__dirname + '/public/index.html');
-      //res.send('hello');
+      res.render('index', {posts: posts});
     })
     .get('/new_post', (req, res) => {
-      res.send('description of post');
+      res.sendFile(__dirname + '/public/post.html');
     })
     .get('/api/posts', (req, res) => {
-      res.send('posts are here');
+      res.send(posts);
     })
     .post('/api/posts', (req, res) => {
       res.send('post is created');
