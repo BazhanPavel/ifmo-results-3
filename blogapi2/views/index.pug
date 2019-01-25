@@ -15,5 +15,5 @@ html(dir='ltr', lang='en')
             h2= item.title
             p= item.categories
             p= item.content
-            a.api_link(href='/api/posts/' + item.id) API Link
-            a.del_link(href='/api/posts/' + item.id) Delete
+            a.api_link(href='/api/posts/' + item.id , target='_blank') API Link
+            a.del_link(href='/delete/' + item.id) Delete

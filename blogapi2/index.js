@@ -25,11 +25,11 @@ app
       res.sendFile(`${__dirname}/public/${req.params.file}`);
     })
     .get('/', (req, res) => {
-      console.log(`http://${req.get('host')}/api/posts`);
+      //console.log(`http://${req.get('host')}/api/posts`);
       fetch(`http://${req.get('host')}/api/posts`)
         .then(r => r.text())
         .then(body => {
-          console.log(body);
+          //console.log(body);
           res.render('index', {posts: JSON.parse(body).reverse()})
         });
     })
@@ -44,8 +44,8 @@ app
     .post('/api/posts', (req, res) => {
       // оборачиваем в Post.find для установки правильного id
       Post.find({}, (err, docs) => {
-        // новый id равен количеству эл-ов ++
-        let newid = ++docs.length;
+        // новый id равен id последнего ++
+        let newid = ++docs[docs.length-1].id;
 
         let post = new Post({
           id: newid,
@@ -57,10 +57,30 @@ app
         post.save(err => {
           if(err) return console.log(err);
           console.log("  -----\nСохранен объект\n", post, "\n  -----");
+          res.redirect('/');
         });
-        res.redirect('/');
       })
     })
     .get('/api/posts/:id', (req, res) => {
-      res.send(`post #${req.params.id}`);
+      Post.findOne({ id: req.params.id }, (err, doc) => {
+        res.send(doc);
+      })
+    })
+    .get('/delete/:id', (req, res) => {
+      // так как удаление происходит по ссылке, которая производит get-запрос,
+      // делаем по нему редирект на DELETE /api/posts/:id, в соответствии с
+      // требованиями к API
+      fetch(`http://${req.get('host')}/api/posts/${req.params.id}`, {method: 'DELETE'})
+        .then(r => { res.redirect('/') })
+    })
+    .delete('/api/posts/:id', (req, res) => {
+      // в соответствии с требованиями к API, оборачиваем .deleteOne запрос в
+      // .findOne запрос, чтобы иметь возможность вернуть в качестве ответа
+      // удаленный элемент целиком
+      Post.findOne({ id: req.params.id }, (err, doc) => {
+        let output = doc;
+        Post.deleteOne({ id: req.params.id }, (err, doc) => {
+          res.send(output);
+        })
+      })
     })
