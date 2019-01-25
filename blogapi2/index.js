@@ -4,7 +4,11 @@ const app = express();
 app.listen(1234);
 app
     .get('/', (req, res) => {
-      res.send('hello');
+      res.sendFile(__dirname + '/public/index.html');
+      //res.send('hello');
+    })
+    .get('/new_post', (req, res) => {
+      res.send('description of post');
     })
     .get('/api/posts', (req, res) => {
       res.send('posts are here');
