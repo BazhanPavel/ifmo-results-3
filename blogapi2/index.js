@@ -1,6 +1,16 @@
 const express = require('express');
 const app = express();
 const fetch = require('node-fetch');
+const mongoose = require('mongoose');
+
+const postScheme = new mongoose.Schema({
+  id: Number,
+  title: String,
+  categories: String,
+  content: String
+});
+const Post = mongoose.model("Post", postScheme);
+
 let posts = [
   { id: 1,
   title: 'Hi!',
@@ -26,9 +36,21 @@ app
       res.render('index', {posts: posts});
     })
     .get('/new_post', (req, res) => {
-      res.sendFile(__dirname + '/public/post.html');
+      res.render('new_post');
     })
     .get('/api/posts', (req, res) => {
+      mongoose.connect("mongodb://localhost:27017/postsdb", { useNewUrlParser: true });
+      let post = new Post({
+        id: 1,
+        title: 'String',
+        categories: 'String',
+        content: 'String'
+      });
+      post.save(err => {
+        mongoose.disconnect();  // отключение от базы данных
+        if(err) return console.log(err);
+        console.log("Сохранен объект", user);
+      });
       res.send(posts);
     })
     .post('/api/posts', (req, res) => {

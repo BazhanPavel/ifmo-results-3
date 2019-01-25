@@ -44,6 +44,7 @@ section.center {
   width: 800px;
   margin: auto;
   margin-top: 20px;
+  /*background: #eee;*/
 }
 
 ul.posts {
@@ -77,4 +78,51 @@ ul.posts a.api_link {
   top: 5px;
   right: 5px;
   color: #999;
+}
+
+form.post_description {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+form.post_description textarea {
+  box-sizing: border-box;
+  resize: none;
+  margin: 0 20px;
+  width: 760px;
+  height: 20em;
+  padding: 1em;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+form.post_description p {
+  margin: 0 20px;
+  color: #aaa;
+  line-height: 20px;
+}
+
+form.post_description input[type='text'] {
+  box-sizing: border-box;
+  margin: 0 20px 20px 20px;
+  width: 360px;
+  height: 3em;
+  padding: 0 1em;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+form.post_description input[type='submit'] {
+  display: block;
+  margin: auto;
+  border: none;
+  width: 120px;
+  height: 40px;
+  background: #333;
+  color: white;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }

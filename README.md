@@ -58,23 +58,8 @@
 
 > [Socket.io Presentation + Chat](https://github.com/PavelBazhan/ifmo-results-3/tree/master/sock-001)
 
-## DOCK-001
-
-**Обёртывание приложения в контейнеры: исследование**
-
-> как автоматизировать создание REST
-> как автоматизировать генерацию сертфикатов
-
-## NODE-005
-
-**Развёртывание CMS на Node и их сравнительный анализ при сопоставлении с CMS на PHP. Пример: Ghost vs WordPress)**
-
-> strings
-> strings
-
 ## TERM-001
 
 **ИТОГОВОЕ задание / задание по практике**
 
-> strings
-> strings
+> [Blog API](https://github.com/PavelBazhan/ifmo-results-3/tree/master/blogapi2)
