@@ -3,16 +3,16 @@ html(dir='ltr', lang='en')
   head
     meta(charset='utf-8')
     title Blog API
+    link(rel='stylesheet', href='/public/index.css')
   body
-    h4 News Feed
-    a(href='/new_post') New Post
-    ul
-      li post #1
-      li post #2
-      li post #3
-      li post #4
-      li post #5
-
-    ul
-      each item in posts
-        li= item.title
+    header
+      h1 News Feed
+    a.button(href='/new_post') New Post
+    section.center
+      ul.posts
+        each item in posts
+          li
+            h2= item.title
+            p= item.categories
+            p= item.content
+            a.api_link(href='/api/posts/' + item.id) API Link
